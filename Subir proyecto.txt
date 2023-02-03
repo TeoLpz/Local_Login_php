@@ -1,0 +1,12 @@
+//Primera vez
+git init
+git add .
+git commit -m "first commit"
+git branch -M main //En caso de tener  otro branch
+git remote add origin https://github.com/TeoLpz/Login_php.git
+git push -u origin main
+
+//Actualizar
+git add .
+git commit -m "first commit"
+git push -u origin main
