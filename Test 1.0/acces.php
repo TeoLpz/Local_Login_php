@@ -1,13 +1,6 @@
 <?php 
-
 //Conexion MYSQL
-$conn = mysqli_connect('localhost', 'root', '', 'Plogin');
-
-if (!$conn) {
-    die("Conexion fallida: " . mysqli_connect_error());
-}else{
-    echo "Conexion exitosa";
-}
+include 'connection.php';
 
 //OBTENER DATOS
 $correo = $_POST['correo'];
@@ -22,9 +15,8 @@ $update = mysqli_query($conn, $sql);
 if(!$update){
 	die(mysqli_error($conn));
 }else{
-    echo "Datos guardados exitosamente"; 
-    echo $sql;
+    echo "Cuenta creada exitosamente<br><a href='index.html'>Volver </a>";
 }
 
-
 ?>
+
